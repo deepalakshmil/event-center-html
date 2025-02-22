@@ -2,7 +2,6 @@ body {
 
     background-color: rgba(46, 43, 43, 2);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -50,12 +49,31 @@ a:hover {
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.418)), url("../images/hero-image.jpg");
     width: 100%;
-    height: 50%;
+    height: 60%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     align-items: center;
+}
+
+.site-footer {
+    background-color: #4f4747;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    color: #fff;
+}
+
+.indexfooter {
+    background-color: #4f4747;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    color: #fff;
+    position: absolute !important;
+    bottom: 0px;
+
 }
 
 #welcome {
@@ -155,13 +173,7 @@ h2 {
     border-width: 12px;
     border-color: rgba(246, 10, 10,0.5); */
 
-.site-footer {
-    background-color: #4f4747;
-    text-align: center;
-    padding: 10px 0;
-    width: 100%;
-    color: #fff;    
-}
+
 
 .location {
     display: flex;
@@ -215,21 +227,20 @@ fieldset {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    max-width: 112%;
 }
 
-.foodmenu>h1 {
-    color: white;
-    font-size: 2em;
-    padding: 20px;
-}
+
 
 #table {
     color: white;
     border: none;
     text-align: center;
-    width: 80%;
+    width: 100%;
     background-color: rgba(46, 43, 43, 2);
 }
 
