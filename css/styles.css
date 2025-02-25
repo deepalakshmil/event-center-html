@@ -104,7 +104,6 @@ a:hover {
     .location,
     .site-footer,
     .site-footer-index,
-    img,
     #table {
         flex-direction: column;
         align-items: center;
@@ -179,7 +178,7 @@ h2 {
     padding: 10px 0;
     width: 100%;
     color: #fff;
-    margin-top: 200px;
+    margin-top: 250px;
     display: flex;
     flex-direction: column;
 }
@@ -223,7 +222,6 @@ form {
     background-color: rgba(46, 43, 43, 2);
     display: flex;
     flex-direction: column;
-
 }
 
 /* Input, textarea, and button styling */
@@ -282,7 +280,7 @@ button:active {
     color: white;
     border: none;
     text-align: center;
-    width: 100%;
+    width: 80%;
     background-color: rgba(46, 43, 43, 2);
 }
 
