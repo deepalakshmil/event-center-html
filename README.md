@@ -1,18 +1,50 @@
-# event-center-html
+# Event Center HTML Project
 
-This the Event Center Webpage Project built on HTML & CSS
- 
- * Follow the below steps to access the webpage.
-* For run the webpage. First start the server and open the webpage.
+This is the Event Center Webpage Project built using HTML & CSS.
 
-* The individual pages are index.html, Events.html, contactus.html, location.html and menu.html to view the images.
+You can follow the steps below to access and run the webpage:
 
-1. index.html - It is the Event Center webpage home page. The modules made with a lot of tags and it includes Navigation, logo, sections, flex, article etc. To Navigation to all Event Center webpage, weclome to our webpage and Hero image adding, about us , and  section assccess to  Featured Event Section ,navigation to all events page. The footer section to go the webpage of  Festival of India.
+- Start a local server (or open the HTML files in your browser) to view the webpage.
 
-2. event.html - It contains are the information about the  Upcoming Event Section. This section using the flex box to  align the all events and article tag using the style  and Using the semantic elements article to structure event details.
+- The project contains the following pages: index.html, events.html, contact.html, location.html, and menu.html.
 
-3. location.html -  It contains are the contact information To find the Event Center Webpage location so using this Google map. To find the Event Center Webpage location so using this Google map . This is the Event Center opening and working time information.
+Pages Overview
 
-4. menu.html - It contains are the this section tag using to view all the menu details. To create the table for view the menu details that is based on table heading, table body, table row and table data. To view the menu details using the image tag and view the price and menu details using the figure and figcaption.
+1. index.html
+   The home page of the Event Center website.
 
-5. contact.html - It contains are the get the Contact details and know the Event Center Webpgae feed back from the user. To start the form framework to align the content becasue form layout inculde the lable box ,input box and textarea ,button. To get the email id correct formate so using the email id type validation.
+Includes the navigation menu, logo, hero section with welcome message, and "About Us" section.
+
+Features a section for Featured Events using flexbox and article elements.
+
+Footer links to the Festival of India website.
+
+2. events.html
+   Displays Upcoming Events.
+
+Uses flexbox and article elements to structure and style each event.
+
+Includes images, event names, dates, and short descriptions.
+
+3. location.html
+   Shows the location and contact information.
+
+Embedded Google Map to find the Event Center.
+
+Lists office hours and phone number.
+
+4. menu.html
+   Displays the food menu of the Event Center.
+
+Menu is organized in a table with headings for Beverages, Appetizers, Mains, and Desserts.
+
+Each menu item includes an image, name, and price using figure and figcaption.
+
+5. contact.html
+   Provides a contact form for users to send feedback.
+
+Form includes name, email, comments, and a submit button.
+
+Email validation is applied for correct format.
+
+Website Live Preview: https://deepa-event-center.netlify.app/

@@ -1,87 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Event Center</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
 
-<body>
+  <body>
     <!--This is the Header section Beginning to adding the logo image -->
     <header class="site-header">
-        <div class="logo">
-            <img src="./images/images.jpg" alt="log-eventcenter" />
-        </div>
-        <!-- Navigation to all Event Center webpage -->
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="location.html">Location</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
+      <div class="logo">
+        <img src="./images/images.jpg" alt="log-eventcenter" />
+      </div>
+      <!-- Navigation to all Event Center webpage -->
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="location.html">Location</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
     </header>
     <!--weclome to our webpage and Hero image adding-->
     <main>
-        <div class="hero-image">
-            <div id="welcome">
-                <h1>Welcome to our website!</h1>
-            </div>
+      <div class="hero-image">
+        <div id="welcome">
+          <h1>Welcome to our website!</h1>
         </div>
-        <!--About us for our Event Center webpage-->
-        <div id="aboutus">
-            <h3>About Us....</h3>
-            <p>Dance Event Center and festivals that promote Indian classical dance, including Bharatanatyam, Kuchipudi,
-                Kathakali for showcasing talents to the world found in 2003, Our facility's are versatile infrastructure
-                supports musical and theatrical performances.</p>
+      </div>
+      <!--About us for our Event Center webpage-->
+      <div id="aboutus">
+        <h3>About Us....</h3>
+        <p>
+          Dance Event Center and festivals that promote Indian classical dance,
+          including Bharatanatyam, Kuchipudi, Kathakali for showcasing talents
+          to the world found in 2003, Our facility's are versatile
+          infrastructure supports musical and theatrical performances.
+        </p>
+      </div>
+      <!--This section assccess to  Featured Event Section and navigation to all events page -->
+      <section id="events">
+        <h2>Featured Events</h2>
+        <!--This section using the flex box to align the all events and article tag using the style-->
+        <div class="event-section">
+          <!--Using the semantic elements article to structure event details.  -->
+          <article class="event">
+            <a href="events.html">
+              <img src="./images/Bharatanatyam.jpg" alt="event-discription" />
+              <h3>Bharatanatyam</h3>
+              <p><strong>March 15</strong></p>
+              <p>
+                Bharatanatyam is the classical Indian dance originating from
+                Tamil Nadu.
+              </p>
+            </a>
+          </article>
+          <article class="event">
+            <a href="events.html">
+              <img src="./images/kuchipudi1.jpg" alt="event-discription" />
+              <h3>Kuchipudi</h3>
+              <p><strong>May 10</strong></p>
+              <p>
+                Kuchipudi is a classical Indian dance-drama that originated in
+                the 17th century
+              </p>
+            </a>
+          </article>
+          <article class="event">
+            <a href="events.html">
+              <img src="./images/Kathakali.jpg" alt="event-discription" />
+              <h3>Kathakali</h3>
+              <p><strong>July 25</strong></p>
+              <p>
+                Kathakali is a dance-drama that combines dance, music, acting,
+                and makeup to tell stories from the Indian epics
+              </p>
+            </a>
+          </article>
         </div>
-        <!--This section assccess to  Featured Event Section and navigation to all events page -->
-        <section id="events">
-            <h2>Featured Events</h2>
-            <!--This section using the flex box to align the all events and article tag using the style-->
-            <div class="event-section">
-                <!--Using the semantic elements article to structure event details.  -->
-                <article class="event">
-                    <a href="events.html">
-                        <img src="./images/Bharatanatyam.jpg" alt="event-discription" />
-                        <h3>Bharatanatyam</h3>
-                        <p><strong>March 15</strong></p>
-                        <p>Bharatanatyam is the classical Indian dance originating from Tamil
-                            Nadu.</p>
-                    </a>
-                </article>
-                <article class="event">
-                    <a href="events.html">
-                        <img src="./images/kuchipudi1.jpg" alt="event-discription" />
-                        <h3>Kuchipudi</h3>
-                        <p><strong>May 10</strong></p>
-                        <p>Kuchipudi is a classical Indian dance-drama that originated in the 17th century</p>
-                    </a>
-                </article>
-                <article class="event">
-                    <a href="events.html">
-                        <img src="./images/Kathakali.jpg" alt="event-discription" />
-                        <h3>Kathakali</h3>
-                        <p><strong>July 25</strong></p>
-                        <p>Kathakali is a dance-drama that combines dance, music, acting, and makeup to tell stories
-                            from the Indian epics</p>
-                    </a>
-                </article>
-            </div>
-        </section>
+      </section>
     </main>
     <!--footer section to go the webpage of  Festival of India-->
     <footer class="site-footer">
-        <p>&copy; 2025 Festival of India Event Center. All Rights Reserved
-        </p>
-        <p>You want More Information visit us at our real site: <a href="https://indiafestival2.iacofcarolinas.org/"
-                target="_blank">
-                Festival of India</a></p>
+      <p>&copy; 2025 Festival of India Event Center. All Rights Reserved</p>
+      <p>
+        You want More Information visit us at our real site:
+        <a href="https://indiafestival2.iacofcarolinas.org/" target="_blank">
+          Festival of India</a
+        >
+      </p>
     </footer>
-</body>
-
+  </body>
 </html>
