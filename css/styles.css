@@ -1,294 +1,391 @@
-/* Set a base font style for the entire webpage */
+/* ========================
+   Base Styles
+======================== */
 body {
-    background-color: rgba(46, 43, 43, 2);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    color: beige;
-    margin: 0rem;
+  background-color: rgba(46, 43, 43, 2);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: beige;
+  margin: 0;
+  padding: 0;
 }
 
-/* To strat basic styling for the Header section */
-.site-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-    background: rgb(36, 27, 27);
+h1,
+h2,
+h3,
+p {
+  margin: 0.5em 0;
+  text-align: center;
 }
 
-/* Basic styling for the navigation bar */
-.navbar a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-
+a {
+  text-decoration: none;
+  color: white;
 }
 
-.navbar ul {
-    display: flex;
-    list-style: none;
-}
-
-.navbar ul li {
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-/* Basic styling for the a tag using hover style */
 a:hover {
-    color: rgba(234, 30, 30, 0.986);
-    background-color: rgba(46, 43, 43, 2);
+  color: rgba(234, 30, 30, 0.986);
+  background-color: rgba(46, 43, 43, 2);
+}
+
+/* ========================
+   Header
+======================== */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: rgb(36, 27, 27);
+  flex-wrap: wrap;
 }
 
 .logo img {
-    width: 50%;
+  max-width: 150px;
+  height: auto;
 }
 
-/* Basic styling for the hero image  */
+.navbar ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.navbar a {
+  display: block;
+  padding: 5px 10px;
+}
+
+/* ========================
+   Hero Section
+======================== */
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.418)), url("../images/hero-image.jpg");
-    width: 100%;
-    height: 60vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/hero-image.jpg");
+  width: 100%;
+  height: 60vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  align-items: center;
+  /* display: flex;
+  justify-content: center; */
 }
 
-/* Basic styling for welcome and aboutus message */
 #welcome {
-    text-align: center;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-100%, -100%);
-    color: white;
-    display: flex;
-    font-size: larger;
+  color: white;
+  font-size: 2em; /* desktop size */
+  text-align: center;
+  padding: 0 20px;
+  max-width: 90%;
+  line-height: 1.2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-100%, -100%);
 }
 
+/* ========================
+   About Us Section
+======================== */
 #aboutus {
-    color: rgb(231, 143, 143);
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.1em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 150px;
-    top: 120px;
+  color: rgb(246, 244, 244);
+  width: 80%;
+  margin: 30px auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1em;
 }
 
-/* Media query for screens smaller than 768px (like tablets or phones) */
-@media screen and (max-width: 400px) {
-    body,
-    nav ul,
-    main {
-        /* display: none;*/
-        flex-direction: column;
-        align-items: center;
-    }
-    nav ul li { 
-        margin: 10px 0; }
-    .foodmenu,
-    .location,
-    .site-footer,
-    .site-footer-index,
-    #table {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-/* Style the h1 element */
-h2 {
-    text-align: center;
-    color: white;
-    padding: 5px;
-    font-size: 2em;
-    margin-top: 1px;
-}
-
-/* Style the title  */
-#upcome-title {
-    font-size: 2em;
-    margin-top: 40px;
-    margin-bottom: 30px;
-}
-
-/* Basic styling for event-section using the flex layout */
-.event-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 3px;
-    margin-top: 40px;
-    margin-bottom: 30px;
-}
-
-/* Basic styling for event-section image */
-.event img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 10px;
-
-}
-
-/* Style the link */
-.event a {
-    text-decoration: none;
-}
-
+/* ========================
+   Events Section
+======================== */
 #events {
-    background-color: rgba(46, 43, 43, 2);
-    padding: 20px 20px;
-    margin-top: 0px;
-    border-radius: 25px;
+  background-color: rgba(46, 43, 43, 2);
+  padding: 20px;
+  border-radius: 25px;
+  margin: 30px auto;
+  max-width: 1200px;
 }
 
-/* Basic styling for event-section */
+.event-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
 .event {
-    padding: 20px;
-    text-align: center;
-    max-width: 300px;
-    border-radius: 15px;
-    border: rgb(15, 15, 15) 1px solid;
+  padding: 20px;
+  text-align: center;
+  max-width: 300px;
+  border-radius: 15px;
+  border: 1px solid rgb(15, 15, 15);
+  background-color: rgba(36, 27, 27, 0.8);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Style the link */
-.event>p:hover {
-    background-color: rgba(242, 241, 241, 0.5);
+.event img {
+  width: 100%;
+  border-radius: 8px;
+  height: auto;
 }
 
-/* Basic styling for footer-section */
-.site-footer {
-    background-color: #4f4747;
-    text-align: center;
-    padding: 10px 0;
-    width: 100%;
-    color: #fff;
-    margin-top: 250px;
-    display: flex;
-    flex-direction: column;
+.event:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
-/* Style the link */
-.site-footer a {
-    text-decoration: none;
-    color: rgb(246, 154, 154);
+/* ========================
+   Food Menu Section
+======================== */
+.foodmenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  max-width: 1200px;
+  margin: 0 auto 30px auto;
 }
 
-/* Basic styling for loaction */
+#menutitle {
+  color: rgb(247, 198, 198);
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+#table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  color: white;
+}
+
+#table th,
+#table td {
+  padding: 10px;
+}
+
+#table th {
+  font-size: 1.2em;
+  color: rgb(247, 198, 198);
+}
+
+#table td figure {
+  margin: 0;
+}
+
+#table td img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+#table td figcaption p {
+  margin: 5px 0;
+}
+
+/* ========================
+   Location Section
+======================== */
 .location {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
 
-/* Style the h1 element */
-h3,
-p {
-    color: white;
-    margin: 10px;
-    text-align: center;
+.map-container {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  padding-top: 56.25%; /* 16:9 ratio */
+  margin-bottom: 20px;
 }
 
-.foodmenu>h1 {
-    color: rgb(247, 198, 198);
-    font-size: 2.5em;
-    padding: 20px;
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
-/* Form styles */
+/* ========================
+   Contact Form
+======================== */
 form {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    /* border: 1px solid #1a1818;*/
-    border-radius: 5px;
-    background-color: rgba(46, 43, 43, 2);
-    display: flex;
-    flex-direction: column;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: rgba(46, 43, 43, 0.9);
+  display: flex;
+  flex-direction: column;
 }
 
-/* Input, textarea, and button styling */
 input,
 textarea,
 button {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 input:focus,
 textarea:focus {
-    border-color: rgb(67, 67, 102);
-    box-shadow: 0 0 8px gray;
+  border-color: rgb(67, 67, 102);
+  box-shadow: 0 0 8px gray;
 }
 
-/* Button styling */
 button {
-    background-color: rgb(110, 110, 242);
-    color: white;
-    cursor: pointer;
-    border: none;
-    border-radius: 4px;
-    padding: 10px;
+  background-color: rgb(110, 110, 242);
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  transition: 0.3s;
 }
 
-/* Style the link for button*/
 button:hover {
-    background-color: rgb(230, 173, 179);
+  background-color: rgb(230, 173, 179);
 }
 
 button:active {
-    background-color: green;
-    transform: scale(0.98);
+  background-color: green;
+  transform: scale(0.98);
 }
 
-/* Basic styling for foodmenu-section */
-.foodmenu {
-    display: flex;
+/* ========================
+   Footer
+======================== */
+.site-footer {
+  background-color: #4f4747;
+  text-align: center;
+  padding: 15px 10px;
+  color: #fff;
+  width: 100%;
+  width: 100%;
+  margin-top: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-footer a {
+  color: rgb(246, 154, 154);
+}
+
+/* ========================
+   Media Queries
+======================== */
+@media screen and (max-width: 1024px) {
+  .hero-image {
+    height: 50vh;
+  }
+  #welcome {
+    font-size: 2.5em;
+    padding: 0 15px;
+  }
+
+  .event-section {
+    justify-content: center;
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-image {
+    height: 40vh;
+  }
+  #welcome {
+    font-size: 2em;
+    padding: 0 10px;
+  }
+  .site-header {
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    border-radius: 8px;
-    margin-bottom: 5px;
-    max-width: 112%;
-}
+  }
 
-/* Basic styling for foodmenu-section */
-#table {
-    color: white;
-    border: none;
-    text-align: center;
-    width: 80%;
-    background-color: rgba(46, 43, 43, 2);
-     display: flex;
-    flex-direction: column;
-}
-
-/* Basic styling for foodmenu-image */
-.foodmenu img {
-    width: 50%;
-    border-radius: 15px;
+  .logo img {
+    max-width: 120px;
     margin-bottom: 10px;
-    max-width: 112%;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar ul li {
+    margin: 5px 0;
+  }
+
+  .hero-image {
+    height: 40vh;
+  }
+
+  #welcome {
+    font-size: 1.5em;
+    padding: 0 10px;
+    top: 40%;
+    transform: translate(-50%, -50%);
+  }
+
+  #aboutus {
+    width: 90%;
+    font-size: 1em;
+  }
+
+  #table th,
+  #table td {
+    display: block;
+    width: 100%;
+  }
+
+  #table tr {
+    display: block;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #666;
+    padding-bottom: 10px;
+  }
 }
 
-/* Style the link for button*/
-img:hover {
-    box-shadow: 0 0 0 10px #fcfbfb;
+@media screen and (max-width: 480px) {
+  .hero-image {
+    height: 35vh;
+  }
+  #welcome {
+    font-size: 1.5em;
+    padding: 0 5px;
+  }
+  #menutitle {
+    font-size: 2em;
+  }
+
+  .event {
+    max-width: 90%;
+  }
+
+  input,
+  textarea,
+  button {
+    padding: 8px;
+  }
 }
