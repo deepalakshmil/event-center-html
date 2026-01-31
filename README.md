@@ -7,6 +7,8 @@ This the Event Center Webpage Project built on HTML & CSS
 
 * The individual pages are index.html, Events.html, contactus.html, location.html and menu.html to view the images.
 
+* 
+
 1. index.html - It is the Event Center webpage home page. The modules made with a lot of tags and it includes Navigation, logo, sections, flex, article etc. To Navigation to all Event Center webpage, weclome to our webpage and Hero image adding, about us , and  section assccess to  Featured Event Section ,navigation to all events page. The footer section to go the webpage of  Festival of India.
 
 2. event.html - It contains are the information about the  Upcoming Event Section. This section using the flex box to  align the all events and article tag using the style  and Using the semantic elements article to structure event details.
