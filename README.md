@@ -8,6 +8,7 @@ You can follow the steps below to access and run the webpage:
 
 - The project contains the following pages: index.html, events.html, contact.html, location.html, and menu.html.
 
+
 Pages Overview
 
 1. index.html
